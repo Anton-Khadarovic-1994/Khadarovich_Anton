@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        P{
+            text-indent:2em;
+            border:1px outset #666;
+            border-radius:1em/2em 0 
+        }
+        .P_1 ::before{
+            content: url(extref.png);
+            padding-left: 13px;
+       
+        }
+        .P_1::after{ 
+            content: url(logo-doc.jpg);
+            padding-left: 15px; 
+        }
+
+        .P_2 ::before{
+            content: url(extref.png);
+            padding-left: 13px;
+       
+        }
+        .P_2::after{ 
+            content: url(logo-pdf.png);
+            padding-left: 15px;
+        }
+        .P_3 ::before{
+            content: url(extref.png);
+            padding-left: 13px;
+        }
+        .P_3::after{ 
+            content: url(logo-zip.gif);
+            padding-left: 15px;
+        }
+            
+        ul {
+            list-style-image: url(logo-list.jpg);
+        }
+        .A_1:hover{
+            background: url(logo-doc.jpg) no-repeat 0 0;
+            padding-left: 15px;     
+        }
+        .A_2:hover{
+            background: url(logo-pdf.png) no-repeat 0 0;
+            padding-left: 15px;       
+        }
+        .A_3:hover{
+            background: url(logo-zip.gif) no-repeat 0 0;
+            padding-left: 15px;      
+        }
+    </style>
+</HEAD> 
+        <BODY>
+        <h2>Форматы файлов.</h2>
+        <p class="P_1">.DOC или .doc (от англ. <a href="https://ru.wikipedia.org/wiki/Doc" target="_blank" class="P_1">document</a>) — расширение имени файла, используемое для файлов, представляющих текст, с разметкой или без.Расширение .DOC часто использовалось для обозначения простых текстовых файлов без форматирования, однако позже стало использоваться для двоичных форматов с разметкой.<br>
+        <a href="files/document.doc" >Документ MS Word</a>
+        </p>
+
+
+		<p class="P_2">Portable Document Format (<a href="https://ru.wikipedia.org/wiki/pdf" target="_blank">PDF</a>) — межплатформенный формат электронных документов, разработанный фирмой Adobe Systems с использованием ряда возможностей языка PostScript.
+		<br>
+        <a href="files/document.pdf">Документ PDF</a>
+        </p>
+
+		<p class="P_3">ZIP — популярный формат сжатия данных и архивации файлов. Файл в этом формате обычно имеет расширение <a href="https://ru.wikipedia.org/wiki/zip" target="_blank">.zip</a> и хранит в сжатом или несжатом виде один или несколько файлов, которые можно из него извлечь путём распаковки с помощью специальной программы.
+		<br>
+        <a href="files/document.zip">Архив</a>
+        </p>
+        <h3>Это список из файлов</h3>
+        <ul>
+        	<li class="A_1"><a href="files/document.doc">Документ MS Word</a></li>
+        	<li class="A_2"><a href="files/document.pdf">Документ PDF</a></li>
+        	<li class="A_3"><a href="files/document.zip">Архив</a></li>
+        </ul>
+
+        </BODY> 
+</HTML>
+    
