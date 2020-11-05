@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .chess_area{
+            border: 3px solid black;
+            overflow: hidden;
+            width: 400px;
+            counter-reset: number 65;          
+        }
+        .chess_td{
+            width: 50px;
+            height: 50 px;
+            float: left;
+            font-size: 27px;
+            text-align: center;
+            padding-top: 10px;
+        }
+        .chess_td::before{
+            counter-increment: number -1;
+            content: counter(number);
+        }
+        .chess_tr:nth-child(odd) .chess_td:nth-child(even) {
+            background: black; color: #fff;
+        }	
+        .chess_tr:nth-child(even) .chess_td:nth-child(odd) {
+            background: black; color: #fff;
+        }
+        
+
+    </style>
+</head>
+<body>
+    
+            <div class="chess_area">
+                    <div class="chess_tr">
+                            <div class="chess_td"></div>
+                            <div class="chess_td"></div>
+                            <div class="chess_td"></div>
+                            <div class="chess_td"></div>
+                            <div class="chess_td"></div>
+                            <div class="chess_td"></div>
+                            <div class="chess_td"></div>
+                            <div class="chess_td"></div>
+                    </div>
+                    <div class="chess_tr">
+                        <div class="chess_td"></div>
+                        <div class="chess_td"></div>
+                        <div class="chess_td"></div>
+                        <div class="chess_td"></div>
+                        <div class="chess_td"></div>
+                        <div class="chess_td"></div>
+                        <div class="chess_td"></div>
+                        <div class="chess_td"></div>
+                </div>
+                <div class="chess_tr">
+                    <div class="chess_td"></div>
+                    <div class="chess_td"></div>
+                    <div class="chess_td"></div>
+                    <div class="chess_td"></div>
+                    <div class="chess_td"></div>
+                    <div class="chess_td"></div>
+                    <div class="chess_td"></div>
+                    <div class="chess_td"></div>
+            </div>
+            <div class="chess_tr">
+                <div class="chess_td"></div>
+                <div class="chess_td"></div>
+                <div class="chess_td"></div>
+                <div class="chess_td"></div>
+                <div class="chess_td"></div>
+                <div class="chess_td"></div>
+                <div class="chess_td"></div>
+                <div class="chess_td"></div>
+        </div>
+        <div class="chess_tr">
+            <div class="chess_td"></div>
+            <div class="chess_td"></div>
+            <div class="chess_td"></div>
+            <div class="chess_td"></div>
+            <div class="chess_td"></div>
+            <div class="chess_td"></div>
+            <div class="chess_td"></div>
+            <div class="chess_td"></div>
+    </div>
+    <div class="chess_tr">
+        <div class="chess_td"></div>
+        <div class="chess_td"></div>
+        <div class="chess_td"></div>
+        <div class="chess_td"></div>
+        <div class="chess_td"></div>
+        <div class="chess_td"></div>
+        <div class="chess_td"></div>
+        <div class="chess_td"></div>
+</div>
+<div class="chess_tr">
+    <div class="chess_td"></div>
+    <div class="chess_td"></div>
+    <div class="chess_td"></div>
+    <div class="chess_td"></div>
+    <div class="chess_td"></div>
+    <div class="chess_td"></div>
+    <div class="chess_td"></div>
+    <div class="chess_td"></div>
+</div>
+<div class="chess_tr">
+    <div class="chess_td"></div>
+    <div class="chess_td"></div>
+    <div class="chess_td"></div>
+    <div class="chess_td"></div>
+    <div class="chess_td"></div>
+    <div class="chess_td"></div>
+    <div class="chess_td"></div>
+    <div class="chess_td"></div>
+</div>
+            </div>
+    
+</body>
+</html>
